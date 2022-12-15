@@ -1,0 +1,18 @@
+.navigation {
+  width: 100%;
+  background-image: url('../../images/bg-sidebar-mobile.svg');
+  background-size: cover;
+  background-position: center;
+  min-height: 17rem;
+  text-align: center;
+}
+
+.navigation ul {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 0;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
