@@ -1,0 +1,16 @@
+.wrapper {
+  margin-bottom: 1.8rem;
+}
+
+.label {
+  font-size: 1.4rem;
+  color: var(--marine-blue);
+}
+
+.input {
+  width: 100%;
+  height: 4rem;
+  padding: 0 1.6rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--cool-gray);
+}

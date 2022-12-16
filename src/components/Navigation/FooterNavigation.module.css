@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  margin: 0 -1.6rem;
+  padding: 1.6rem;
+}
+
+.wrapper.first-step {
+  justify-content: right;
+}

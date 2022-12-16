@@ -1,4 +1,17 @@
 .card {
   background-color: var(--white);
-  padding: 3.6rem 2.4rem;
+  padding: 3rem 2.4rem;
+  position: relative;
+  top: -7.4rem;
+  border-radius: 0.8rem;
+}
+
+.title {
+  color: var(--marine-blue);
+  margin-bottom: 1.9rem;
+}
+
+.description {
+  color: var(--cool-gray);
+  margin-bottom: 2.7rem;
 }

@@ -1,11 +1,3 @@
-html {
-  font-size: 62.5%;
-}
-
-body {
-  margin: 0;
-}
-
 :root {
   --marine-blue: hsl(213, 96%, 18%);
   --purplish-blue: hsl(243, 100%, 62%);
@@ -18,6 +10,17 @@ body {
   --magnolia: hsl(217, 100%, 97%);
   --alabaster: hsl(231, 100%, 99%);
   --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Ubuntu';
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  background-color: var(--light-gray);
 }
 
 /* Box sizing rules */

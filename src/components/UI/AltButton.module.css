@@ -1,0 +1,7 @@
+.alt-btn {
+  padding: 0;
+  border: none;
+  color: var(--cool-gray);
+  background-color: transparent;
+  cursor: pointer;
+}

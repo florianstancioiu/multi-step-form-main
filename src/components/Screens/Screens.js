@@ -1,8 +1,10 @@
 import PersonalInfo from './PersonalInfo';
 
+import classes from './Screens.module.css';
+
 const Screens = () => {
   return (
-    <div>
+    <div className={classes.screens}>
       <PersonalInfo />
     </div>
   );
