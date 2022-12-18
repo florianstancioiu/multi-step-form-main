@@ -7,6 +7,10 @@
   box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.17);
 }
 
+.card h1 {
+  font-size: 2.4rem;
+}
+
 .title {
   color: var(--marine-blue);
   margin-bottom: 1.9rem;
