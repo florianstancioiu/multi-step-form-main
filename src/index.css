@@ -20,7 +20,7 @@ html {
 body {
   margin: 0;
   font-size: 1.6rem;
-  background-color: var(--light-gray);
+  background-color: var(--magnolia);
 }
 
 /* Box sizing rules */

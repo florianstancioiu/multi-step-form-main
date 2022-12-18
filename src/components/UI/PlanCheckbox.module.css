@@ -1,0 +1,33 @@
+.plan-checkbox {
+  border: 1px solid var(--cool-gray);
+  margin-bottom: 1.4rem;
+  border-radius: 0.6rem;
+  padding: 1.7rem 1.6rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.plan-checkbox:hover,
+.plan-checkbox.active {
+  background-color: var(--magnolia);
+  border-color: var(--marine-blue);
+}
+
+.plan-details {
+  padding-left: 1.4rem;
+}
+
+.plan-title {
+  font-weight: 500;
+  color: var(--marine-blue);
+}
+
+.plan-price {
+  color: var(--cool-gray);
+  font-size: 1.2rem;
+}
+
+.plan-free {
+  color: var(--marine-blue);
+  font-size: 1.2rem;
+}
