@@ -1,0 +1,56 @@
+.wrapper {
+  border: 1px solid var(--cool-gray);
+  border-radius: 0.6rem;
+  margin-bottom: 1.3rem;
+  padding: 1.4rem 1.6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox {
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 1px solid var(--cool-gray);
+  border-radius: 0.3rem;
+  margin-right: 1.6rem;
+}
+
+.checkbox-inner {
+  display: none;
+}
+
+.title {
+  font-weight: 500;
+  color: var(--marine-blue);
+}
+
+.desc {
+  color: var(--cool-gray);
+}
+
+.price {
+  margin-left: auto;
+  color: var(--purplish-blue);
+}
+
+.active {
+  border-color: var(--purplish-blue);
+  background-color: var(--magnolia);
+}
+
+.active .checkbox {
+  background-color: var(--purplish-blue);
+  border-color: var(--purplish-blue);
+  position: relative;
+}
+
+.active .checkbox-inner {
+  display: block;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.3rem;
+}
