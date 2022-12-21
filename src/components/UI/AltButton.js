@@ -1,8 +1,8 @@
 import classes from './AltButton.module.css';
 
-const AltButton = ({ title }) => {
+const AltButton = ({ title, onClick }) => {
   return (
-    <button type='button' className={classes['alt-btn']}>
+    <button onClick={onClick} type='button' className={classes['alt-btn']}>
       {title}
     </button>
   );

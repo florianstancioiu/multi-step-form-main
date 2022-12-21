@@ -15,8 +15,8 @@
   border-radius: 50%;
   color: var(--white);
   margin-right: 1.6rem;
-  cursor: pointer;
   font-weight: 500;
+  user-select: none;
 }
 
 .nav-item.active .nav-item-circle,

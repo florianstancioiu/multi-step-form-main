@@ -53,7 +53,7 @@ const SelectYourPlan = () => {
         ))}
         <MonthyYearlyCheckbox />
       </Card>
-      <FooterNavigation currentStep={2} />
+      <FooterNavigation />
     </>
   );
 };

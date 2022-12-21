@@ -43,7 +43,7 @@ const PickAddons = () => {
           />
         ))}
       </Card>
-      <FooterNavigation currentStep={3} />
+      <FooterNavigation />
     </>
   );
 };

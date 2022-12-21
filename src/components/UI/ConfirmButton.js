@@ -1,8 +1,8 @@
 import classes from './ConfirmButton.module.css';
 
-const ConfirmButton = ({ title }) => {
+const ConfirmButton = ({ title, onClick }) => {
   return (
-    <button type='button' className={classes.btn}>
+    <button onClick={onClick} type='button' className={classes.btn}>
       {title}
     </button>
   );

@@ -11,7 +11,7 @@ const FinishingUp = () => {
       >
         <Box />
       </Card>
-      <FooterNavigation currentStep={4} />
+      <FooterNavigation />
     </>
   );
 };
