@@ -1,0 +1,9 @@
+.btn {
+  color: var(--white);
+  background-color: var(--purplish-blue);
+  height: 4rem;
+  padding: 0 1.7rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+}

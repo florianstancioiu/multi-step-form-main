@@ -1,0 +1,69 @@
+.plan-wrapper {
+  background-color: var(--magnolia);
+  border-radius: 0.4rem;
+  padding: 1.6rem;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--light-gray);
+  margin-bottom: 1.4rem;
+}
+
+.plan-title {
+  color: var(--marine-blue);
+  font-weight: 500;
+}
+
+.plan-change {
+  color: var(--cool-gray);
+  text-decoration: underline;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.plan-price {
+  color: var(--marine-blue);
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.addon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+
+.addon:last-child {
+  margin-bottom: 0;
+}
+
+.addon-title {
+  color: var(--cool-gray);
+  font-size: 1.5rem;
+}
+
+.addon-price {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.total {
+  padding: 3rem 1.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-title {
+  color: var(--cool-gray);
+  font-size: 1.5rem;
+}
+
+.total-price {
+  color: var(--purplish-blue);
+  font-size: 1.7rem;
+  font-weight: 700;
+}

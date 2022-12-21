@@ -1,5 +1,6 @@
 import MainButton from '../UI/MainButton';
 import AltButton from '../UI/AltButton';
+import ConfirmButton from '../UI/ConfirmButton';
 
 import classes from './FooterNavigation.module.css';
 
@@ -11,7 +12,8 @@ const FooterNavigation = ({ currentStep }) => {
   return (
     <div className={wrapperClasses}>
       {currentStep !== 1 && <AltButton title='Go Back' />}
-      <MainButton title='Next Step' />
+      {currentStep !== 4 && <MainButton title='Next Step' />}
+      {currentStep === 4 && <ConfirmButton title='Confirm' />}
     </div>
   );
 };
