@@ -2,6 +2,16 @@
   margin-bottom: 1.8rem;
 }
 
+.wrapper.error .input {
+  border-color: var(--strawberry-red);
+}
+
+.wrapper.error .label-error {
+  color: var(--strawberry-red);
+  float: right;
+  font-weight: 500;
+}
+
 .label {
   font-size: 1.4rem;
   color: var(--marine-blue);

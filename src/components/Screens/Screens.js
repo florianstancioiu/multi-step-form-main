@@ -11,8 +11,6 @@ const Screens = () => {
   const ctx = useContext(MainContext);
   const { currentStep } = ctx;
 
-  console.log(ctx.currentStep);
-
   return (
     <div className={classes.screens}>
       {currentStep === 1 && <PersonalInfo />}

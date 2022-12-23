@@ -6,7 +6,12 @@ import MainContext from '../../store/main-context';
 
 const PersonalInfo = () => {
   const ctx = useContext(MainContext);
-  const { personalInfo } = ctx;
+  const {
+    personalInfo,
+    nameChangeHandler,
+    emailAddressChangeHandler,
+    phoneNumberChangeHandler,
+  } = ctx;
 
   return (
     <>
@@ -19,6 +24,8 @@ const PersonalInfo = () => {
             id='name'
             type='text'
             value={personalInfo.name}
+            error={personalInfo.nameError}
+            onChange={nameChangeHandler}
             label='Name'
             placeholder='e.g. Stephen King'
           />
@@ -26,6 +33,8 @@ const PersonalInfo = () => {
             id='email-address'
             type='text'
             value={personalInfo.emailAddress}
+            error={personalInfo.emailAddressError}
+            onChange={emailAddressChangeHandler}
             label='Email Address'
             placeholder='e.g. stephenking@lorem.com'
           />
@@ -33,6 +42,8 @@ const PersonalInfo = () => {
             id='phone-number'
             type='text'
             value={personalInfo.phoneNumber}
+            error={personalInfo.phoneNumberError}
+            onChange={phoneNumberChangeHandler}
             label='Phone Number'
             placeholder='e.g. +1 234 567 890'
           />
