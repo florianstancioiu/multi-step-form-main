@@ -19,8 +19,7 @@
   user-select: none;
 }
 
-.nav-item.active .nav-item-circle,
-.nav-item-circle:hover {
+.nav-item.active .nav-item-circle {
   background-color: var(--white);
   color: var(--marine-blue);
 }

@@ -13,6 +13,21 @@ const MainContextProvider = ({ children }) => {
     phoneNumberError: null,
   });
 
+  const [selectedPlan, setSelectedPlan] = useState(1);
+  const [monthlyPlan, setMonthlyPlan] = useState(true);
+
+  const monthlyClickHandler = () => {
+    setMonthlyPlan(true);
+  };
+
+  const yearlyClickHandler = () => {
+    setMonthlyPlan(false);
+  };
+
+  const monthlyCheckboxClickHandler = () => {
+    setMonthlyPlan((prevState) => !prevState);
+  };
+
   const nameChangeHandler = (event) => {
     setPersonalInfo((prevState) => {
       return {
@@ -137,6 +152,8 @@ const MainContextProvider = ({ children }) => {
   const increaseStep = () => {
     if (currentStep === 1) {
       validateForm() && setCurrentStep((prevState) => prevState + 1);
+    } else {
+      setCurrentStep((prevState) => prevState + 1);
     }
   };
 
@@ -148,18 +165,28 @@ const MainContextProvider = ({ children }) => {
     setCurrentStep(4);
   };
 
+  const selectPlanHandler = (id) => {
+    setSelectedPlan(id);
+  };
+
   return (
     <MainContext.Provider
       value={{
         ...initialContextData,
         currentStep,
         personalInfo,
+        selectedPlan,
+        monthlyPlan,
         increaseStep,
         decreaseStep,
         showThankYouStep,
         nameChangeHandler,
         emailAddressChangeHandler,
         phoneNumberChangeHandler,
+        monthlyClickHandler,
+        yearlyClickHandler,
+        monthlyCheckboxClickHandler,
+        selectPlanHandler,
       }}
     >
       {children}

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import PersonalInfo from './PersonalInfo';
-import SelectYourPlan from './SelectYourPlan';
+import SelectYourPlan from './SelectYourPlan/SelectYourPlan';
 import PickAddons from './PickAddons';
 import FinishingUp from './FinishingUp/FinishingUp';
 import MainContext from '../../store/main-context';
