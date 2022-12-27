@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import PersonalInfo from './PersonalInfo';
+import PersonalInfo from './PersonalInfo/PersonalInfo';
 import SelectYourPlan from './SelectYourPlan/SelectYourPlan';
-import PickAddons from './PickAddons';
+import PickAddons from './PickAddons/PickAddons';
 import FinishingUp from './FinishingUp/FinishingUp';
 import MainContext from '../../store/main-context';
 

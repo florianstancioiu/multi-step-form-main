@@ -1,8 +1,8 @@
-import Card from '../UI/Card';
-import Input from '../UI/Input';
-import FooterNavigation from '../Navigation/FooterNavigation';
+import Card from '../../UI/Card';
+import Input from '../../UI/Input';
+import FooterNavigation from '../../Navigation/FooterNavigation';
 import { useContext } from 'react';
-import MainContext from '../../store/main-context';
+import MainContext from '../../../store/main-context';
 
 const PersonalInfo = () => {
   const ctx = useContext(MainContext);

@@ -2,6 +2,10 @@ import { useState } from 'react';
 import MainContext from './main-context';
 import { initialContextData } from './main-context';
 
+import ArcadeImage from '../images/icon-arcade.svg';
+import AdvancedImage from '../images/icon-advanced.svg';
+import ProImage from '../images/icon-pro.svg';
+
 const MainContextProvider = ({ children }) => {
   const [currentStep, setCurrentStep] = useState(2);
   const [personalInfo, setPersonalInfo] = useState({
@@ -12,8 +16,62 @@ const MainContextProvider = ({ children }) => {
     phoneNumber: '',
     phoneNumberError: null,
   });
+  const [plans, setPlans] = useState([
+    {
+      id: 1,
+      title: 'Arcade',
+      monthlyPrice: 9,
+      yearlyPrice: 90,
+      yearlyFreeMonths: 2,
+      image: ArcadeImage,
+      isActive: true,
+    },
+    {
+      id: 2,
+      title: 'Advanced',
+      monthlyPrice: 12,
+      yearlyPrice: 120,
+      yearlyFreeMonths: 2,
+      image: AdvancedImage,
+      isActive: false,
+    },
+    {
+      id: 3,
+      title: 'Pro',
+      monthlyPrice: 15,
+      yearlyPrice: 150,
+      yearlyFreeMonths: 2,
+      image: ProImage,
+      isActive: false,
+    },
+  ]);
+  const [addons, setAddons] = useState([
+    {
+      id: 1,
+      title: 'Online service',
+      description: 'Access to multiplayer games',
+      monthlyPrice: 1,
+      yearlyPrice: 10,
+      isActive: false,
+    },
+    {
+      id: 2,
+      title: 'Larger Storage',
+      description: 'Extra 1TB of cloud save',
+      monthlyPrice: 2,
+      yearlyPrice: 20,
+      isActive: false,
+    },
+    {
+      id: 3,
+      title: 'Customizable profile',
+      description: 'Custom theme on your profile',
+      monthlyPrice: 2,
+      yearlyPrice: 20,
+      isActive: false,
+    },
+  ]);
 
-  const [selectedPlan, setSelectedPlan] = useState(1);
   const [monthlyPlan, setMonthlyPlan] = useState(true);
 
   const monthlyClickHandler = () => {
@@ -166,7 +224,36 @@ const MainContextProvider = ({ children }) => {
   };
 
   const selectPlanHandler = (id) => {
-    setSelectedPlan(id);
+    const filteredPlans = plans.map((plan) => {
+      if (plan.id === id) {
+        return {
+          ...plan,
+          isActive: true,
+        };
+      }
+
+      return {
+        ...plan,
+        isActive: false,
+      };
+    });
+
+    setPlans(filteredPlans);
+  };
+
+  const selectAddonHandler = (id) => {
+    const selectedAddons = addons.map((addon) => {
+      if (addon.id === id) {
+        return {
+          ...addon,
+          isActive: !addon.isActive,
+        };
+      }
+
+      return addon;
+    });
+
+    setAddons(selectedAddons);
   };
 
   return (
@@ -175,8 +262,9 @@ const MainContextProvider = ({ children }) => {
         ...initialContextData,
         currentStep,
         personalInfo,
-        selectedPlan,
         monthlyPlan,
+        plans,
+        addons,
         increaseStep,
         decreaseStep,
         showThankYouStep,
@@ -187,6 +275,7 @@ const MainContextProvider = ({ children }) => {
         yearlyClickHandler,
         monthlyCheckboxClickHandler,
         selectPlanHandler,
+        selectAddonHandler,
       }}
     >
       {children}
