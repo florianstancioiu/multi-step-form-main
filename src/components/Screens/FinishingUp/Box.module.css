@@ -31,26 +31,6 @@
   font-size: 1.7rem;
 }
 
-.addon {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.4rem;
-}
-
-.addon:last-child {
-  margin-bottom: 0;
-}
-
-.addon-title {
-  color: var(--cool-gray);
-  font-size: 1.5rem;
-}
-
-.addon-price {
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-
 .total {
   padding: 3rem 1.6rem 1rem;
   display: flex;

@@ -8,6 +8,7 @@ export const initialContextData = {
   currentStep: 1,
   increaseStep: () => {},
   decreaseStep: () => {},
+  goToStep: (step) => {},
   showThankYouStep: () => {},
   personalInfo: {
     name: '',

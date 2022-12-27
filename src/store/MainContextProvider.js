@@ -219,6 +219,12 @@ const MainContextProvider = ({ children }) => {
     setCurrentStep((prevState) => prevState - 1);
   };
 
+  const goToStep = (step) => {
+    if (step >= 1 && step <= 4) {
+      setCurrentStep(step);
+    }
+  };
+
   const showThankYouStep = () => {
     setCurrentStep(4);
   };
@@ -267,6 +273,7 @@ const MainContextProvider = ({ children }) => {
         addons,
         increaseStep,
         decreaseStep,
+        goToStep,
         showThankYouStep,
         nameChangeHandler,
         emailAddressChangeHandler,
