@@ -20,3 +20,10 @@
   color: var(--cool-gray);
   margin-bottom: 2.7rem;
 }
+
+@media screen and (min-width: 942px) {
+  .card {
+    position: static;
+    box-shadow: none;
+  }
+}

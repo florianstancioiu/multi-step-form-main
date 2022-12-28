@@ -1,4 +1,4 @@
-import './App.css';
+import classes from './App.module.css';
 import Navigation from './Navigation/Navigation';
 import Screens from './Screens/Screens';
 import MainContextProvider from '../store/MainContextProvider';
@@ -6,7 +6,7 @@ import MainContextProvider from '../store/MainContextProvider';
 function App() {
   return (
     <MainContextProvider>
-      <main>
+      <main className={classes.main}>
         <Navigation />
         <Screens />
       </main>

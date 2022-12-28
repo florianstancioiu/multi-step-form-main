@@ -7,7 +7,7 @@ import AdvancedImage from '../images/icon-advanced.svg';
 import ProImage from '../images/icon-pro.svg';
 
 const MainContextProvider = ({ children }) => {
-  const [currentStep, setCurrentStep] = useState(2);
+  const [currentStep, setCurrentStep] = useState(1);
   const [showThankYouStep, setShowThankYouStep] = useState(false);
   const [personalInfo, setPersonalInfo] = useState({
     name: '',

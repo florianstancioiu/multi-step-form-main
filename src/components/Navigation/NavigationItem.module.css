@@ -27,3 +27,27 @@
 .nav-item-circle:last-child {
   margin-right: 0;
 }
+
+@media screen and (min-width: 942px) {
+  .nav-item-info {
+    display: block;
+  }
+
+  .nav-item {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  .nav-item-step {
+    color: var(--light-gray);
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+
+  .nav-item-title {
+    color: var(--white);
+    font-weight: 500;
+  }
+}
