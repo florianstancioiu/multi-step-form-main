@@ -9,7 +9,8 @@ export const initialContextData = {
   increaseStep: () => {},
   decreaseStep: () => {},
   goToStep: (step) => {},
-  showThankYouStep: () => {},
+  showThankYouStep: false,
+  showThankYouStepHandler: () => {},
   personalInfo: {
     name: '',
     nameError: null,

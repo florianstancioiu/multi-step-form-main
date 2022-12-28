@@ -22,7 +22,9 @@ const FooterNavigation = () => {
       {currentStep !== 4 && (
         <MainButton onClick={ctx.increaseStep} title='Next Step' />
       )}
-      {currentStep === 4 && <ConfirmButton title='Confirm' />}
+      {currentStep === 4 && (
+        <ConfirmButton onClick={ctx.showThankYouStepHandler} title='Confirm' />
+      )}
     </div>
   );
 };

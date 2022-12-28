@@ -1,0 +1,19 @@
+.img {
+  max-width: 5.6rem;
+  display: block;
+  margin: 3.8rem auto 2.7rem;
+}
+
+.title {
+  text-align: center;
+  color: var(--marine-blue);
+  font-weight: 700;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.description {
+  text-align: center;
+  color: var(--cool-gray);
+  margin-bottom: 5rem;
+}

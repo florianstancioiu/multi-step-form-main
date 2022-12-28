@@ -7,8 +7,8 @@ const Card = ({ children, className, title, description }) => {
 
   return (
     <div className={appliedClasses}>
-      <h1 className={classes.title}>{title}</h1>
-      <p className={classes.description}>{description}</p>
+      {title && <h1 className={classes.title}>{title}</h1>}
+      {description && <p className={classes.description}>{description}</p>}
       {children}
     </div>
   );

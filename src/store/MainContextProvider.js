@@ -8,6 +8,7 @@ import ProImage from '../images/icon-pro.svg';
 
 const MainContextProvider = ({ children }) => {
   const [currentStep, setCurrentStep] = useState(2);
+  const [showThankYouStep, setShowThankYouStep] = useState(false);
   const [personalInfo, setPersonalInfo] = useState({
     name: '',
     nameError: null,
@@ -225,8 +226,8 @@ const MainContextProvider = ({ children }) => {
     }
   };
 
-  const showThankYouStep = () => {
-    setCurrentStep(4);
+  const showThankYouStepHandler = () => {
+    setShowThankYouStep(true);
   };
 
   const selectPlanHandler = (id) => {
@@ -267,6 +268,7 @@ const MainContextProvider = ({ children }) => {
       value={{
         ...initialContextData,
         currentStep,
+        showThankYouStep,
         personalInfo,
         monthlyPlan,
         plans,
@@ -274,7 +276,6 @@ const MainContextProvider = ({ children }) => {
         increaseStep,
         decreaseStep,
         goToStep,
-        showThankYouStep,
         nameChangeHandler,
         emailAddressChangeHandler,
         phoneNumberChangeHandler,
@@ -283,6 +284,7 @@ const MainContextProvider = ({ children }) => {
         monthlyCheckboxClickHandler,
         selectPlanHandler,
         selectAddonHandler,
+        showThankYouStepHandler,
       }}
     >
       {children}
