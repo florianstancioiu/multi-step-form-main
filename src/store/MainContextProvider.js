@@ -156,7 +156,7 @@ const MainContextProvider = ({ children }) => {
       return false;
     }
 
-    const emailAddressRegex = new RegExp('^[^s@]+@[^s@]+.[^s@]+$');
+    const emailAddressRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailAddressRegex.test(personalInfo.emailAddress)) {
       setPersonalInfo((prevState) => {
         return {

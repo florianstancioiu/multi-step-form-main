@@ -9,3 +9,11 @@
 .wrapper.first-step {
   justify-content: right;
 }
+
+@media screen and (min-width: 942px) {
+  .wrapper {
+    width: 45.2rem;
+    padding: 0;
+    margin: 90px 0 0;
+  }
+}
