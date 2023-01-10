@@ -31,3 +31,16 @@
   color: var(--marine-blue);
   font-size: 1.2rem;
 }
+
+@media screen and (min-width: 942px) {
+  .plan-checkbox {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+  }
+
+  .plan-details {
+    padding-left: 0;
+    margin-top: 4.6rem;
+  }
+}
